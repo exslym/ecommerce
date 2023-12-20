@@ -25,8 +25,10 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
               <Image
                 src={inclusion.icon}
                 alt={inclusion.title}
-                width={36}
-                height={36}
+                loading={'lazy'}
+                height={0}
+                width={0}
+                style={{ width: '36px', height: 'auto' }}
                 className={classes.icon}
               />
 
@@ -41,7 +43,14 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
         <Gutter>
           <div className={classes.wrap}>
             <Link href="/">
-              <Image src="/logo-white.svg" alt="logo" width={170} height={50} />
+              <Image
+                src="/logo-white.svg"
+                alt="logo"
+                loading={'lazy'}
+                height={0}
+                width={0}
+                style={{ width: '170px', height: '50px' }}
+              />
             </Link>
 
             <p>{footer?.copyright}</p>
@@ -61,8 +70,10 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                     <Image
                       src={icon?.url}
                       alt={item.link.label}
-                      width={24}
-                      height={24}
+                      loading={'lazy'}
+                      height={0}
+                      width={0}
+                      style={{ width: '24px', height: 'auto' }}
                       className={classes.socialIcon}
                     />
                   </Button>

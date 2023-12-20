@@ -37,7 +37,7 @@ export interface Page {
   title: string;
   publishedOn?: string | null;
   hero: {
-    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
+    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact' | 'customHero';
     richText: {
       [k: string]: unknown;
     }[];
@@ -178,7 +178,8 @@ export interface Media {
 }
 export interface Category {
   id: string;
-  title?: string | null;
+  title: string;
+  media?: string | Media | null;
   parent?: (string | null) | Category;
   breadcrumbs?:
     | {
@@ -502,7 +503,7 @@ export interface Header {
 }
 export interface Footer {
   id: string;
-  copyright: string;
+  copyright?: string | null;
   navItems?:
     | {
         link: {
