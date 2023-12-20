@@ -69,11 +69,12 @@
 
 .socialLinks {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-.socialLinkItem {
+a.socialLinkItem {
   width: 100%;
+  padding: 10px;
 }
 
 .socialIcon {

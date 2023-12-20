@@ -5,8 +5,8 @@
 
 :root {
   --base: 24px;
-  --font-body: 'Jost', sans-serif;
-  --font-jost: 'Jost', sans-serif;
+  --font-body: 'Jost', Helvetica, Arial, sans-serif;
+  --font-jost: 'Jost', Helvetica, Arial, sans-serif;
 
   --gutter-h: 180px;
   --block-padding: 120px;
@@ -54,6 +54,9 @@ body {
   flex-flow: column;
 }
 
+main {
+  flex: 1 1 auto;
+}
 .main {
   flex: 1 1 auto;
 }
