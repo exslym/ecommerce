@@ -15,6 +15,7 @@ import classes from './index.module.scss'
 const FooterComponent = ({ footer }: { footer: Footer }) => {
   const pathname = usePathname()
   const navItems = footer?.navItems || []
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
@@ -53,7 +54,10 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
               />
             </Link>
 
-            <p>{footer?.copyright}</p>
+            {/* <p>{footer?.copyright}</p> */}
+            <p>
+              <span>&#169;&nbsp;{currentYear}</span> <span>All rights reserved</span>
+            </p>
 
             <div className={classes.socialLinks}>
               {navItems.map(item => {
