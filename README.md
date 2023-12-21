@@ -1,4 +1,4 @@
-## [E-Commerce App](https://eventlify-exs.vercel.app/)
+## [E-Commerce App](https://e-commerce-exs.payloadcms.app/)
 
 [![preview](https://github.com/exslym/ecommerce/blob/main/public/preview.jpg)](https://e-commerce-exs.payloadcms.app/)
 
@@ -7,6 +7,7 @@
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
     <img src="https://img.shields.io/badge/-Next_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=3178C6" alt="Next" />
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=3178C6" alt="Mongo" />
+    <img src="https://img.shields.io/badge/-Express-black?style=for-the-badge&logoColor=white&logo=express&color=3178C6" alt="Express" />
     <img src="https://img.shields.io/badge/-Payload CMS-black?style=for-the-badge&logoColor=white&logo=payloadcms&color=3178C6" alt="Payload" />
     <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=3178C6" alt="Stripe" />
   </div>
