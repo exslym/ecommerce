@@ -1,5 +1,5 @@
-import React, { Suspense } from 'react'
 import { Metadata } from 'next'
+import React, { Suspense } from 'react'
 
 import { Gutter } from '../../_components/Gutter'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
