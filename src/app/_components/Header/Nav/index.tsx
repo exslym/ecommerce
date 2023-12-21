@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Header as HeaderType } from '../../../../payload/payload-types'
@@ -20,8 +21,20 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {navItems.map(({ link }, i) => {
         return <CMSLink key={i} {...link} appearance="none" />
       })}
-      <CartLink />
-      {user && <Link href="/account">Account</Link>}
+      {/* <CartLink /> */}
+      {user && <CartLink />}
+      {user && (
+        <Link href="/account">
+          <Image
+            src="/assets/icons/user.svg"
+            alt="avatar"
+            height={0}
+            width={0}
+            style={{ width: '24px', height: 'auto' }}
+          />
+          {/* <p className={classes.user}>Account</p> */}
+        </Link>
+      )}
       {!user && (
         <Button
           el="link"
@@ -31,7 +44,6 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
           onClick={() => (window.location.href = '/login')}
         />
       )}
-      {user && <CartLink />}
     </nav>
   )
 }

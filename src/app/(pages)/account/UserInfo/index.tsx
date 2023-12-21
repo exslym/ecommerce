@@ -12,7 +12,13 @@ export const UserInfo = () => {
 
   return (
     <div className={classes.profile}>
-      <Image src="/assets/icons/profile.svg" alt="profile" width={50} height={50} />
+      <Image
+        src="/assets/icons/profile.svg"
+        alt="profile"
+        height={0}
+        width={0}
+        style={{ width: '50px', height: 'auto' }}
+      />
 
       <div className={classes.profileInfo}>
         <p className={classes.name}>{user?.name}</p>

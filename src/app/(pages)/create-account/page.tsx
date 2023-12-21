@@ -25,8 +25,9 @@ export default async function CreateAccount() {
           <Image
             src="/logo-black.svg"
             alt="logo"
-            width={250}
-            height={23}
+            height={0}
+            width={0}
+            style={{ width: '250px', height: 'auto' }}
             className={classes.logo}
           />
         </Link>

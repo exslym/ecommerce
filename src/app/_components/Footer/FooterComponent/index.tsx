@@ -49,7 +49,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                 loading={'lazy'}
                 height={0}
                 width={0}
-                style={{ width: '170px', height: '50px' }}
+                style={{ width: '170px', height: 'auto' }}
               />
             </Link>
 
