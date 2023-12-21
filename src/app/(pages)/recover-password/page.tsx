@@ -1,7 +1,7 @@
+import React from 'react'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 import { RenderParams } from '../../_components/RenderParams'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'

@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
 
 import { Category } from '../../../payload/payload-types'
 import CategoryCard from './CategoryCard'

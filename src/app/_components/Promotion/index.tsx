@@ -11,6 +11,11 @@ const Promotion = () => {
     seconds: 0,
   })
 
+  // const currentDate = new Date()
+  // const targetDate = useMemo(() => {
+  //   currentDate.setDate(currentDate.getDate() + 5)
+  // }, [])
+
   const targetDate = new Date()
   targetDate.setDate(targetDate.getDate() + 5)
 
@@ -18,6 +23,7 @@ const Promotion = () => {
     const timerInterval = setInterval(() => {
       const currentTime = new Date()
       const timeDifference = Math.max(Number(targetDate) - Number(currentTime), 0)
+      // const timeDifference = Math.max(Number(currentDate) - Number(currentTime), 0)
 
       const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
       const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
@@ -30,13 +36,14 @@ const Promotion = () => {
         clearInterval(timerInterval)
         // You can add code here to handle what happens when the target date is reached.
         targetDate.setDate(targetDate.getDate() + 5)
+        // currentDate.setDate(currentDate.getDate() + 5)
       }
     }, 1000)
 
     return () => {
       clearInterval(timerInterval) // Cleanup the interval when the component unmounts.
     }
-  }, [])
+  })
 
   return (
     <section className={classes.promotion}>

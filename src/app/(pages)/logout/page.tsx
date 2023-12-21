@@ -1,5 +1,5 @@
-import { Metadata } from 'next'
 import React from 'react'
+import { Metadata } from 'next'
 
 import { Settings } from '../../../payload/payload-types'
 import { fetchSettings } from '../../_api/fetchGlobals'
