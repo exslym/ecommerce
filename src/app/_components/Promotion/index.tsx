@@ -43,7 +43,7 @@ const Promotion = () => {
     return () => {
       clearInterval(timerInterval) // Cleanup the interval when the component unmounts.
     }
-  })
+  }, [])
 
   return (
     <section className={classes.promotion}>
