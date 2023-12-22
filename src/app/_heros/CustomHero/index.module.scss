@@ -59,6 +59,9 @@
       font-size: 36px;
       margin: 8px 0;
     }
+    @media screen and (max-width: 430px) {
+      width: 60%;
+    }
   }
 
   p {
@@ -70,6 +73,15 @@
 
     @include small-break {
       font-size: 18px;
+    }
+  }
+
+}
+.subtitle {
+  br {
+    display: none;
+    @media screen and (max-width: 530px) {
+      display: block;
     }
   }
 }

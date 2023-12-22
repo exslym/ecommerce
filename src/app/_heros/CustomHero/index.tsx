@@ -17,6 +17,10 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
       <div className={classes.heroWrapper} style={{ backgroundImage: `url(${mediaUrl})` }}>
         <div className={classes.heroTextBox}>
           <RichText content={richText} />
+          <p className={classes.subtitle}>
+            <span>Explore a&nbsp;World</span> <br />
+            <span>of&nbsp;Cutting-Edge&nbsp;Tech</span>
+          </p>
           {Array.isArray(links) && links.length > 0 && (
             <ul className={classes.links}>
               {links.map(({ link }, i) => {
